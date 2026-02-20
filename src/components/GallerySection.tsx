@@ -1,13 +1,11 @@
 import { motion } from "framer-motion";
 import vineyardPost from "@/assets/vineyard-post.jpeg";
 import vineyardLabeled from "@/assets/vineyard-labeled.jpeg";
-import miloLogo from "@/assets/milo-logo-2.jpeg";
 import gallerySquad from "@/assets/gallery-squad.png";
 
 const images = [
   { src: vineyardPost, alt: "Kimchi & Milo at vineyard – original 2021 post" },
   { src: vineyardLabeled, alt: "Kimchi & Milo labeled at vineyard" },
-  { src: miloLogo, alt: "Milo logo – corgi vector art" },
   { src: gallerySquad, alt: "Milo, Kimchi & friends – squad goals" },
 ];
 
@@ -33,7 +31,7 @@ const GallerySection = () => {
           Documented friendship since 2021.
         </motion.p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {images.map((img, i) => (
             <motion.div
               key={i}
@@ -41,12 +39,12 @@ const GallerySection = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.15 }}
-              className="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300"
+              className="rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300 aspect-square"
             >
               <img
                 src={img.src}
                 alt={img.alt}
-                className="w-full h-64 object-cover"
+                className="w-full h-full object-cover"
                 loading="lazy"
               />
             </motion.div>
