@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import miloLogo from "@/assets/milo-logo.jpeg";
+import miloLogo from "@/assets/milo-logo-2.jpeg";
 
 const CharacterSection = () => {
   return (
