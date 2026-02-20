@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import vineyardPost from "@/assets/vineyard-post.jpeg";
+import miloLogo2 from "@/assets/milo-logo-2.jpeg";
 
 const HeroSection = () => {
   return (
@@ -14,6 +15,14 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-secondary/80" />
 
       <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
+        <motion.img
+          src={miloLogo2}
+          alt="Milo logo"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          className="w-28 h-28 rounded-full mx-auto mb-6 shadow-xl border-4 border-accent"
+        />
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
