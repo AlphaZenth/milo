@@ -2,11 +2,13 @@ import { motion } from "framer-motion";
 import vineyardPost from "@/assets/vineyard-post.jpeg";
 import vineyardLabeled from "@/assets/vineyard-labeled.jpeg";
 import miloLogo from "@/assets/milo-logo-2.jpeg";
+import gallerySquad from "@/assets/gallery-squad.png";
 
 const images = [
   { src: vineyardPost, alt: "Kimchi & Milo at vineyard – original 2021 post" },
   { src: vineyardLabeled, alt: "Kimchi & Milo labeled at vineyard" },
   { src: miloLogo, alt: "Milo logo – corgi vector art" },
+  { src: gallerySquad, alt: "Milo, Kimchi & friends – squad goals" },
 ];
 
 const GallerySection = () => {
